@@ -1,0 +1,5 @@
+node_modules
+build
+sample
+tasks/build-inverted-index
+bootstrap-actions/install-mystem.sh

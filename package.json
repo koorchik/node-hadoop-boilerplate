@@ -1,0 +1,23 @@
+{
+  "name": "node-hadoop-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack && find build/ -name '*.js' -exec perl -pi -e 'print qq{#!/usr/bin/env node\n} if $ .== 1' {} \\; && chmod +x build/*/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:koorchik/node-hadoop-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hadoop-streaming-utils": "0.0.8"
+  },
+  "devDependencies": {
+    "json-loader": "^0.5.2",
+    "webpack": "^1.9.10"
+  }
+}
