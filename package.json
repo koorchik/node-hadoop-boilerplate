@@ -1,7 +1,7 @@
 {
   "name": "node-hadoop-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Boilerplate for Hadoop tasks written in JavaScript",
   "main": "index.js",
   "scripts": {
     "build": "webpack && find build/ -name '*.js' -exec perl -pi -e 'print qq{#!/usr/bin/env node\n} if $ .== 1' {} \\; && chmod +x build/*/*.js",
